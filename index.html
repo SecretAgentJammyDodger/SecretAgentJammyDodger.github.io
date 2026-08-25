@@ -4,57 +4,7 @@
   the myriad technologies that come together to finally make the interactive art<br>
   we all know and love.</p>
 
-<p>Post 1</p>
-<p>
-  Trying to understand mathematics beyond things like calculus and 3 dimensional vectors has always meant<br>
-  trying to figure out and reverse engineer just what on earth all the crazy names, symbols, theories, and proofs mean. <br>
-  As someone that is currently doing video game programming in Unity, occasionally problems have come up<br>
-  wherein the so-called "Euler Angles" prove insufficient for rotations and/or calculations, and instead<br>
-  a so-called "Quaternion" solution is chosen.</p>
-<p>
-  Those of you who are reading this who are like-minded might be somewhat triggered by the use of "so-called"<br>
-  in such a manner, as despite popular misconception, it does not mean "this is what it is called", but rather<br>
-  puts into focus the dubious, suspicious, or insufficient naming of the thing that we are talking of.
-</p>
-<p>
-  That is all to say, that Euler Angles may also be called, perhaps more properly, Tait-Bryan Angles,<br>
-  and more surprisingly and importantly to some, that the Quaternions that we typically refer to <br>
-  in the common engines such as Unity or Unreal, are more properly named Versors - <br>
-  Unit Quaternions, and those with "norm" or magnitude 1, are properly referred to as Versors.<br>
-  This distinction is indeed quite important, more important than one might initially think or feel.<br>
-  But more about that later.
-</p>
-<p>
-  All of this was kind of spurred off by a random math book that I read, that stated something about<br>
-  how the real reason the these Euler or Tait-Bryan Angles are insufficient for properly representing <br>
-  rotations in 3D space is because rotations, or the paths traced by a rotation, somehow conforms onto <br>
-  the surface of a torus, whereas the Unit Quaternions or Versors instead has rotations or paths traced <br>
-  by them happening on the surface of a sphere.
-</p>
-<p>
-  This was a fascinating concept that seemed to finally make some sense to me as to why Euler Angles didn't <br>
-  always work but (Unit) Quaternions do. <br>
-  Of course, after some more digging, I learned that in fact the Versors are indeed not themselves entirely sufficient <br>
-  and that something else is needed too...<br>
-  This is where I come to the meat of the discussion and digging that I did yesterday and this morning.<br>
-  So, allegedly, or according to the theories of topology (not strictly polygonal, as is the common meaning <br>
-  of the term as used in game dev mostly by artists) of broader mathematics, there are these things called Topological Spaces. <br>
-</p>
-<p>
-  So, the general assertions of the theory that I believe are important are that:
+<p>Posts:</>
 <ul>
-  <li>Versors live in a topological space known as S^3 or a 3-sphere.</li>
-  <li>Quaternions live in a topological space known as R^4, and the 3-sphere exists inside R^4.</li>
-  <li>The algebra of Quaternions takes place in R^4</li>
-  <li>The algebra of Versors takes place in a space known as SU(2), which lets the Versors have single solutions?</li>
-  <li>The 3D vectors that we are used to and are relatively straightforward exist inside R^3.</li>
-  <li>A rotation of an Euler Angle creates a space known as S^1 or a 1-sphere; a circle.</li>
-  <li>The 3 rotations of Euler Angles when put together make a 3-torus: "S^1 x S^1 x S^1 = T^3"</li>
-  <li>(don't ask me why the previous statement, I haven't gotten there yet)</li>
-  <li>S^1 is an algebraic space or structure that exists inside C, the space of complex numbers.</li>
-</ul>  
-</p>
-<p>
-  So yeah, there's a good chance I have butchered some of the terminology, or am misunderstanding some things,<br>
-  but the basic gist is too much to write at this time so I will come back to this later...
-</p>
+<li><a href="versors.html">Quaternions and Euler Angles</a></li>
+</ul>
