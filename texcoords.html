@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	.hidden-link {
+		text-decoration: none;
+		color: inherit;
+	}
+	</style>
+</head>
+<title>TEXCOORDs and UVs - Prickly Problems in Game Dev</title>
+
+<body>
+<h1><em><a href="index.html" class="hidden-link">Prickly Problems in Game Dev Blog</a><br /></em></h1>
+
+<h2>UVs and Semantics - Some Interesting Things</h2>
+
+
+<p>27th August 2026</p>
+<p>
+	So today before class, I was bored, and I did some Googling about shaders. <br>
+	I'm at a point where I think I'm decent at them writing shaders, despite <br>
+	not necessarily knowing all the terminology, such as "Interpolators". <br>
+</p>
+<p>
+	I recently came across an example of a Unity URP shader, <br>
+	in the brilliant and often recommended tutorials and <br>
+	explanations by <a href="">Catlike Coding</a>. <br>
+	I noticed that some of the semantic tags used were strangely <br>
+	preceded by a VAR_, such as VAR_NORMAL. Something I had not <br>
+	encountered before, and is surprisingly a little troublesome <br>
+	to Google, as the engine assumes you are talking about regular <br>
+	var local variables...
+</p>
+<p>
+	In case it's not obvious, I'm still very much a noob at game dev, <br>
+	in fact a lot of these posts will probably just be documenting <br>
+	my path or journey of discoveries, if just for the sake of being <br>
+	able to look back if I'm ever lost.
+</p>
+<p>
+	Anyways, this eventually led down the rabbit-hole of 
+
+</p>
+
+
+<h2>Something like a summary...</h2>
+<p>
+  The semantics and what they are associated with by default:
+<ul>
+  <li>TEXCOORD0 = UV0, which is the UVs that you normally interact with in Maya etc.</li>
+  <li>TEXCOORD1 = UV1, these UVs can be added to allow for more detailed texturing.</li>
+  <li>TEXCOORD2 = UV2, used by the common engines (Unity, Unreal, Godot) for lightmaps.</li>
+  <li>TEXCOORD3 = UV3</li>
+  <li>TEXCOORD4+ = pretty much for extra data and calculations.</li>
+</ul>  
+</p>
+</body>
+
+</html>
